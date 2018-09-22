@@ -1,6 +1,6 @@
 package com.makridin.labfolder.service;
 
-import com.makridin.labfolder.rest.data.LevenshteinReportData;
+import com.makridin.labfolder.service.data.LevenshteinReportData;
 
 public interface FindFrequencyService
 {

@@ -1,6 +1,7 @@
 package com.makridin.labfolder.rest;
 
-import com.makridin.labfolder.rest.data.LevenshteinReportData;
+import com.makridin.labfolder.rest.bean.LevenshtainBean;
+import com.makridin.labfolder.service.data.LevenshteinReportData;
 import com.makridin.labfolder.service.FindFrequencyService;
 
 import javax.annotation.Resource;
@@ -20,14 +21,14 @@ public class LevenshtainRestController
     @Path("/find_frequency")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public LevenshteinReportData findFrequencyAndSimilarWords(String text, String keyword)
+    public LevenshteinReportData findFrequencyAndSimilarWords(LevenshtainBean reguest)
     {
-        if(text == null || text.isEmpty())
+        if(reguest.getText() == null || reguest.getText().trim().isEmpty() || reguest.getKeyword() == null || reguest.getKeyword().trim().isEmpty())
         {
             return new LevenshteinReportData();
         }
 
-        myFindFrequencyService.findFrequencyAndSimilarWords(text, keyword);
+        myFindFrequencyService.findFrequencyAndSimilarWords(reguest.getText().trim(), reguest.getKeyword().trim());
         return new LevenshteinReportData();
     }
 }

@@ -1,6 +1,6 @@
 package com.makridin.labfolder.service.impl;
 
-import com.makridin.labfolder.rest.data.LevenshteinReportData;
+import com.makridin.labfolder.service.data.LevenshteinReportData;
 import com.makridin.labfolder.service.FindFrequencyService;
 import org.springframework.stereotype.Component;
 
