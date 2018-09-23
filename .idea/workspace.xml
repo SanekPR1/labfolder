@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="937d2dda-9089-4af1-ba22-a8bb3d2596c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceMyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceMyImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandardImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandardImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labfolder/src/test/java/com/makridin/labfolder/service/FindFrequencyServiceMyImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/labfolder/src/test/java/com/makridin/labfolder/service/FindFrequencyMyImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labfolder/src/test/java/com/makridin/labfolder/service/FindFrequencyServiceStandardImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/labfolder/src/test/java/com/makridin/labfolder/service/FindFrequencyStandardImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/labfolder/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +24,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="2752" />
+          <entry key="java" value="2754" />
           <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2752" />
+          <entry key="JAVA" value="2754" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="15" />
         </counts>
@@ -62,11 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="367">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandardImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="646">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceMyImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="442">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,11 +140,11 @@
         <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandartImpl.java" />
         <option value="$PROJECT_DIR$/labfolder/src/test/java/com/makridin/labfolder/service/FindFrequencyServiceStandardImplTest.java" />
         <option value="$PROJECT_DIR$/labfolder/src/test/java/com/makridin/labfolder/rest/LevenshtainRestControllerTest.java" />
-        <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java" />
         <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyService.java" />
         <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequency.java" />
-        <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandardImpl.java" />
         <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceMyImpl.java" />
+        <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandardImpl.java" />
+        <option value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java" />
       </list>
     </option>
   </component>
@@ -364,7 +359,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537702397187" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537702491001" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -553,7 +548,7 @@
       <option name="presentableId" value="Default" />
       <updated>1537524009830</updated>
       <workItem from="1537622163284" duration="15574000" />
-      <workItem from="1537687805562" duration="14066000" />
+      <workItem from="1537687805562" duration="14321000" />
     </task>
     <servers />
   </component>
@@ -590,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29640000" />
+    <option name="totallyTimeSpent" value="29895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -836,20 +831,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/FindFrequencyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceMyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -866,18 +861,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceStandardImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="646">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/service/impl/FindFrequencyServiceMyImpl.java">
+    <entry file="file://$PROJECT_DIR$/labfolder/src/main/java/com/makridin/labfolder/rest/LevenshtainRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="367">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

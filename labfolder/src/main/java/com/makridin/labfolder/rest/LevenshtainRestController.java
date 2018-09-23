@@ -30,13 +30,4 @@ public class LevenshtainRestController
 
         return myFindFrequencyService.findFrequencyAndSimilarWords(request.getText().trim(), request.getKeyword().trim());
     }
-
-    @POST
-    @Path("/get")
-    @Produces(MediaType.APPLICATION_JSON)
-    public LevenshteinReportData findFrequencyAndSimilarWords()
-    {
-
-        return new LevenshteinReportData();
-    }
 }
