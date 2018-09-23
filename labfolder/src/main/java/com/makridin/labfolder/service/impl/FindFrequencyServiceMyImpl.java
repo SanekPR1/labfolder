@@ -2,27 +2,31 @@ package com.makridin.labfolder.service.impl;
 
 import com.makridin.labfolder.service.data.LevenshteinReportData;
 import com.makridin.labfolder.service.FindFrequencyService;
-import org.springframework.context.annotation.Scope;
+import com.makridin.labfolder.service.utils.FindFrequencyUtil;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 @Component(value = "myFindFrequencyService")
-@Scope("prototype")
-public class FindFrequencyServiceMyImpl extends FindFrequency implements FindFrequencyService
+public class FindFrequencyServiceMyImpl implements FindFrequencyService
 {
     @Override
     public LevenshteinReportData findFrequencyAndSimilarWords(String text, String keyword)
     {
+        if(!StringUtils.hasText(text) || !StringUtils.hasText(keyword))
+        {
+            return new LevenshteinReportData(keyword == null ? "" : keyword, 0, new HashSet<>(0));
+        }
+        keyword = keyword.trim();
         int keywordCounter = 0;
         Set<String> similarWords = new HashSet<>();
 
-        String[] mass = splitText(text);
+        String[] mass = FindFrequencyUtil.splitText(text.trim());
         for (String word : mass)
         {
-            if(isWordLengthEligible(word, keyword))
+            if(FindFrequencyUtil.isWordLengthEligible(word, keyword))
             {
                 int dif = getDifference(keyword, word);
 
@@ -39,8 +43,8 @@ public class FindFrequencyServiceMyImpl extends FindFrequency implements FindFre
 
         return new LevenshteinReportData(keyword, keywordCounter, similarWords);
     }
-    
-    //PRIVATE REGION
+
+    //region Private
     private int getDifference(String keyword, String word) {
         int dif;
         int shift = 0;
@@ -86,32 +90,5 @@ public class FindFrequencyServiceMyImpl extends FindFrequency implements FindFre
         }
         return dif;
     }
-
-    public static void main(String[] args)
-    {
-        String text = "Word,!? word-word % word1, - SWord( *ord !Words @Ward #Cord $:;Wosd ^&?Work, Word. /pWor| d \\Sword \"sWord\"";
-        StringBuffer b = new StringBuffer(text);
-        long milis = new Date().getTime();
-        for (int i = 0; i < 1_000_00; i++)
-        {
-            b.append(" " + i + "Word");
-            System.out.println(i);
-        }
-        System.out.println(new Date().getTime() - milis);
-        text = b.toString();
-        System.out.println("After word creation");
-
-        String keyword = "Word";
-
-        milis = new Date().getTime();
-        FindFrequencyServiceMyImpl imp = new FindFrequencyServiceMyImpl();
-        LevenshteinReportData data = imp.findFrequencyAndSimilarWords(text, keyword);
-        System.out.println(data.getKeyword());
-        System.out.println(data.getFrequency());
-        for (String str : data.getSimilarWords())
-        {
-            System.out.println(str);
-        }
-        System.out.println(new Date().getTime() - milis);
-    }
+    //endregion
 }
