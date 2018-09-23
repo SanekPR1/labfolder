@@ -11,14 +11,15 @@ import java.util.Set;
 
 @Component(value = "myFindFrequencyService")
 @Scope("prototype")
-public class FindFrequencyServiceMyImpl implements FindFrequencyService
+public class FindFrequencyServiceMyImpl extends FindFrequency implements FindFrequencyService
 {
     @Override
     public LevenshteinReportData findFrequencyAndSimilarWords(String text, String keyword)
     {
         int keywordCounter = 0;
         Set<String> similarWords = new HashSet<>();
-        String[] mass = text.replaceAll("[^a-zA-Z0-9- ]", "").split("\\s+");
+
+        String[] mass = splitText(text);
         for (String word : mass)
         {
             if(isWordLengthEligible(word, keyword))
@@ -35,16 +36,11 @@ public class FindFrequencyServiceMyImpl implements FindFrequencyService
                 }
             }
         }
+
         return new LevenshteinReportData(keyword, keywordCounter, similarWords);
     }
-
-
+    
     //PRIVATE REGION
-    private boolean isWordLengthEligible(String word, String keyword)
-    {
-        return word.length() >= keyword.length() - 1 && word.length() <= keyword.length() + 1;
-    }
-
     private int getDifference(String keyword, String word) {
         int dif;
         int shift = 0;

@@ -9,20 +9,20 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component(value = "findFrequencyService")
-public class FindFrequencyServiceStandardImpl implements FindFrequencyService
+public class FindFrequencyServiceStandardImpl extends FindFrequency implements FindFrequencyService
 {
 
     @Override
     public LevenshteinReportData findFrequencyAndSimilarWords(String text, String keyword)
     {
-        String[] mass = text.replaceAll("[^a-zA-Z0-9- ]", "").split("\\s+");
+        String[] mass = splitText(text);
         LevenshteinDistance distance = new LevenshteinDistance(1);
         int frequency = 0;
         Set<String> similarWords = new HashSet<>();
         for (String word : mass)
         {
             int diff;
-            if(word.length() >= keyword.length() - 1 && word.length() <= keyword.length() + 1)
+            if(isWordLengthEligible(word, keyword))
             {
                 diff = distance.apply(word, keyword);
                 if(diff == 0)
